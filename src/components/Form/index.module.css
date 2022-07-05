@@ -1,0 +1,46 @@
+.field {
+  width: 700px;
+  padding: 10px;
+  font-size: medium;
+}
+
+.input {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.label {
+  padding: 10px;
+  font-size: large;
+}
+
+.content {
+  font-size: medium;
+  min-width: 90%;
+  max-width: 90%;
+  min-height: 200px;
+  max-height: 200px;
+  border: 1px solid #3191f2;
+  border-radius: 5px;
+  box-sizing: border-box;
+  overflow: auto;
+}
+.button {
+  box-sizing: border-box;
+  font-size: inherit;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1px solid #3191f2;
+  color: #ffffff;
+  background-color: #3191f2;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+}
+
+.button:hover {
+  background-color: #0a7df0;
+}
