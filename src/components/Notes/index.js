@@ -7,7 +7,7 @@ import NoteItem from '../NoteItem';
 
 function Notes() {
   const [data, addData] = useState([]);
-  const url = 'https://ra-6-crud-backend.herokuapp.com/notes';
+  const url = process.env.REACT_APP_URL;
   const placeholder = 'Add your first Note, then you will see it here.';
 
   const loadNotes = () => {
@@ -20,7 +20,7 @@ function Notes() {
 
   useEffect(() => {
     loadNotes();
-  }, []);
+  });
 
   const handleAdd = async (item) => {
     const note = JSON.stringify(item);
